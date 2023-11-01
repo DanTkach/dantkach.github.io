@@ -204,13 +204,13 @@ body::-webkit-scrollbar-thumb {
     align-content: center;
     justify-content: center;
     height: 30rem;
-    width: 40rem;
+    width: 45rem;
     margin: 1rem;
     padding: 2rem;
     color: #5c452d;
     letter-spacing: 0.05rem;
     font-size: 1.1rem;
-    margin-top: 4rem;
+    margin-top: 8rem;
 }
 .form .signup__field {
     display: flex;
