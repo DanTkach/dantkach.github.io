@@ -1,399 +1,398 @@
 /*
-  Design inspired by 
+Design inspired by 
 
-  - https://dribbble.com/shots/7151065-Halloween-Party-Invitation-PSD/attachments/155335?mode=media
-  - https://dribbble.com/shots/14425674-Happy-Halloween
+- https://dribbble.com/shots/7151065-Halloween-Party-Invitation-PSD/attachments/155335?mode=media
+- https://dribbble.com/shots/14425674-Happy-Halloween
 
 */
 @import url("https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Jolly+Lodger&display=swap");
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  -ms-user-select: none;
-      user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-user-select: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
-  overflow-x: hidden;
-  background: #e1dfb6;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  font-family: "Caveat Brush", sans-serif;
-  text-transform: lowercase;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    background: #e1dfb6;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    font-family: 'Palatino', serif;
 }
 
 body::-webkit-scrollbar {
-  width: 0.5rem;
+    width: 0.5rem;
 }
 
 body::-webkit-scrollbar-track {
-  box-shadow: inset 0 0 0.5rem #5c452d;
+    box-shadow: inset 0 0 0.5rem #5c452d;
 }
 
 body::-webkit-scrollbar-thumb {
-  background: #FF7824;
-  outline: none;
+    background: #FF7824;
+    outline: none;
 }
 
-@media (max-width: 51.9375rem) {
-  body {
-    transform: scale(0.75);
-  }
-
-  .intro {
-    margin: 12rem 0 0 2rem;
-  }
-}
 
 .stars {
-  position: absolute;
-  font-size: 2rem;
-  color: #9566C5;
-  width: 100%;
-  height: 100%;
+    position: absolute;
+    font-size: 2rem;
+    color: #9566C5;
+    width: 100%;
+    height: 100%;
 }
 .stars > * {
-  position: absolute;
-  -webkit-animation: twinkle 3s linear infinite;
-          animation: twinkle 3s linear infinite;
+    position: absolute;
+    -webkit-animation: twinkle 3s linear infinite;
+    animation: twinkle 3s linear infinite;
 }
 @-webkit-keyframes twinkle {
-  50% {
+50% {
     transform: rotate(20deg) scale(0.5) translateY(0.25rem);
-  }
+}
 }
 @keyframes twinkle {
-  50% {
+50% {
     transform: rotate(20deg) scale(0.5) translateY(0.25rem);
-  }
+}
 }
 .stars #star-1 {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 .stars #star-2 {
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
 }
 .stars #star-3 {
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+    -webkit-animation-delay: 3s;
+    animation-delay: 3s;
 }
 .stars #star-4 {
-  -webkit-animation-delay: 4s;
-          animation-delay: 4s;
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
 }
 .stars #star-5 {
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
+    -webkit-animation-delay: 5s;
+    animation-delay: 5s;
 }
 .stars #star-6 {
-  -webkit-animation-delay: 6s;
-          animation-delay: 6s;
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
 }
 .stars div:nth-child(even) {
-  color: #FF7824;
-  font-size: 1.5rem;
+    color: #FF7824;
+    font-size: 1.5rem;
 }
 .stars #star-1 {
-  top: 10rem;
-  left: -5rem;
+    top: 10rem;
+    left: -5rem;
 }
 .stars #star-2 {
-  top: 4rem;
-  left: -6rem;
+    top: 4rem;
+    left: -6rem;
 }
 .stars #star-3 {
-  top: -4rem;
-  left: 4rem;
+    top: -4rem;
+    left: 4rem;
 }
 .stars #star-4 {
-  top: -2rem;
-  left: 8rem;
+    top: -2rem;
+    left: 8rem;
 }
 .stars #star-5 {
-  top: 8rem;
-  left: 15rem;
+    top: 8rem;
+    left: 15rem;
 }
 .stars #star-6 {
-  top: 0rem;
-  left: 16rem;
+    top: 0rem;
+    left: 16rem;
 }
 
 .shrek {
-  position: absolute;
-  height: 32rem;
-  width: 32rem;
-  padding: 0.5rem;
-  margin-top: 5rem;
+    position: absolute;
+    height: 32rem;
+    width: 32rem;
+    padding: 0.5rem;
+    margin-top: 5rem;
 }
 .shrek {
-  position: absolute;
-  -webkit-animation: shrek-anim 3s linear infinite;
-          animation: shrek-anim 3s linear infinite;
+    position: absolute;
+    -webkit-animation: shrek-anim 3s linear infinite;
+    animation: shrek-anim 3s linear infinite;
 }
 @-webkit-keyframes shrek-anim {
-  50% {
+50% {
     transform: rotate(3deg) scale(0.95) translateY(0.05rem);
-  }
+}
 }
 @keyframes shrek-anim {
-  50% {
+50% {
     transform: rotate(3deg) scale(0.95) translateY(0.05rem);
-  }
+}
 }
 .shrek {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+    -webkit-animation-delay: 1s;
+    animation-delay: 1s;
 }
 .intro {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  position: relative;
-  height: 20rem;
-  width: 15rem;
-  font-family: "Jolly Lodger", sans-serif;
-  color: #FFFFFF;
-  text-align: center;
-  text-transform: uppercase;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    height: 20rem;
+    width: 15rem;
+    font-family: "Jolly Lodger", sans-serif;
+    color: #FFFFFF;
+    text-align: center;
 }
 .intro .circle {
-  position: absolute;
-  height: 25rem;
-  width: 25rem;
-  padding: 0.5rem;
-  border-radius: 50% 60% 40% 70%;
-  background: #b2c400;
-  z-index: 3;
+    position: absolute;
+    height: 25rem;
+    width: 25rem;
+    padding: 0.5rem;
+    border-radius: 50% 60% 40% 70%;
+    background: #b2c400;
+    z-index: 3;
 }
 .intro h1.title {
-  font-size: 5.5rem;
-  line-height: 4.5rem;
-  letter-spacing: 0.25rem;
-  margin-left: 1rem;
-  z-index: 10;
-  text-shadow: -0.25rem -0.25rem #5c452d;
-  transform: skew(-28deg) rotate(-15deg);
+    font-size: 5.5rem;
+    line-height: 4.5rem;
+    letter-spacing: 0.25rem;
+    margin-left: 1rem;
+    z-index: 10;
+    text-shadow: -0.25rem -0.25rem #5c452d;
+    transform: skew(-28deg) rotate(-15deg);
 }
 .intro h1.sub {
     padding-top: 2rem;
-  font-size: 2rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.05rem;
-  z-index: 4;
-  color: #c5ee7d;
-  text-shadow: -0.15rem -0.15rem #7a9244;
-  transform: skew(-28deg) rotate(-15deg);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    z-index: 4;
+    color: #c5ee7d;
+    text-shadow: -0.15rem -0.15rem #7a9244;
+    transform: skew(-28deg) rotate(-15deg);
 }
 
 .intro h1.sub2 {
-  font-size: 2rem;
-  line-height: 2.5rem;
-  letter-spacing: 0.05rem;
-  z-index: 4;
-  color: #c5ee7d;
-  text-shadow: -0.15rem -0.15rem #7a9244;
-  transform: skew(-28deg) rotate(-15deg);
+    font-size: 2rem;
+    line-height: 2.5rem;
+    letter-spacing: 0.05rem;
+    z-index: 4;
+    color: #c5ee7d;
+    text-shadow: -0.15rem -0.15rem #7a9244;
+    transform: skew(-28deg) rotate(-15deg);
 }
 
 .form {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-  height: 30rem;
-  width: 25rem;
-  margin: 1rem;
-  padding: 2rem;
-  color: #5c452d;
-  letter-spacing: 0.05rem;
-  font-size: 1.1rem;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    height: 30rem;
+    width: 40rem;
+    margin: 1rem;
+    padding: 2rem;
+    color: #5c452d;
+    letter-spacing: 0.05rem;
+    font-size: 1.1rem;
+    margin-top: 4rem;
 }
 .form .signup__field {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 .form .label,
 .form legend {
-  font-family: "Caveat Brush", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.2rem;
-  font-size: 1rem;
-  color: #FFFFFF;
-  font-weight: 700;
-  padding: 0.5rem;
+    font-family: 'Palatino', serif;
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    color: #FFFFFF;
+    font-weight: 700;
+    padding: 0.5rem;
 }
 .form input,
 .form select {
-  border: none;
-  width: 100%;
-  background: #e1dfb6;
-  border-radius: 0.5rem;
-  padding: 0.5rem;
-  font-family: "Caveat Brush", sans-serif;
-  font-size: 1.1rem;
-  text-align: center;
-  text-transform: lowercase;
-  letter-spacing: 0.075rem;
-  line-height: 1.3rem;
-  color: #5c452d;
+    border: none;
+    width: 100%;
+    background: #e1dfb6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    font-family: 'Palatino', serif;
+    font-size: 1.1rem;
+    text-align: center;
+    letter-spacing: 0.075rem;
+    line-height: 1.3rem;
+    color: #5c452d;
 }
 .form input:hover,
 .form select:hover {
-  background: #8cb04e;
+    background: #8cb04e;
 }
 .form input:focus,
 .form select:focus {
-  outline: 0.25rem solid #5c452d;
+    outline: 0.25rem solid #5c452d;
 }
 .form .signup__field.name label {
-  color: #5c452d;
+    color: #5c452d;
 }
 .form .signup__field.name input {
-  background: #abbb00;
+    background: #abbb00;
 }
 .form .signup__field.name input:focus {
-  outline: 0.25rem solid #5c452d;
+    outline: 0.25rem solid #5c452d;
 }
 .form fieldset {
-  text-align: center;
-  border: none;
-  background: #abbb00;
-  border-radius: 30% 40% 60% 40%;
-  padding: 2rem;
-  margin-bottom: 1rem;
+    text-align: center;
+    border: none;
+    background: #abbb00;
+    border-radius: 35% 30% 50% 40%;
+    padding: 2rem;
+    margin-bottom: 1rem;
 }
 .form fieldset > legend {
-  transform: translateY(2rem);
+    transform: translateY(2rem);
 }
 .form fieldset .choices {
-  position: relative;
-  width: 40%;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    position: relative;
+    width: 40%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 .form fieldset .choices .choice1,
 .form fieldset .choices .choice2 {
-  position: relative;
-  margin: 0.5rem;
-  display: flex;
-  flex-flow: row nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    position: relative;
+    margin: 0.5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 .form fieldset .choices .choice1 input[type=radio],
 .form fieldset .choices .choice2 input[type=radio] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  border-radius: 50%;
-  border: 0.2rem solid #5c452d;
-  background: #e1dfb6;
-  display: grid;
-  place-content: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 50%;
+    border: 0.2rem solid #5c452d;
+    background: #e1dfb6;
+    display: grid;
+    place-content: center;
 }
 .form fieldset .choices .choice1 input[type=radio]:before,
 .form fieldset .choices .choice2 input[type=radio]:before {
-  content: "";
-  display: inline-block;
-  width: 0.35rem;
-  height: 0.35rem;
-  border-radius: 50%;
-  border: 0.2rem solid #5c452d;
-  background: #e1dfb6;
-  transform: scale(0);
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #5c452d;
+    content: "";
+    display: inline-block;
+    width: 0.35rem;
+    height: 0.35rem;
+    border-radius: 50%;
+    border: 0.2rem solid #5c452d;
+    background: #e1dfb6;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #5c452d;
 }
 .form fieldset .choices .choice1 input[type=radio]:checked:before,
 .form fieldset .choices .choice2 input[type=radio]:checked:before {
-  transform: scale(1);
+    transform: scale(1);
 }
 .form .signup__field.snack {
-  position: relative;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
 }
 .form .signup__field.snack input[type=checkbox] {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  background: transparent;
-  width: 1rem;
-  height: 1rem;
-  margin-right: 0.5rem;
-  border-radius: 0.15rem;
-  border: 0.2rem solid #5c452d;
-  background: #e1dfb6;
-  display: grid;
-  place-content: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: transparent;
+    width: 1rem;
+    height: 1rem;
+    margin-right: 0.5rem;
+    border-radius: 0.15rem;
+    border: 0.2rem solid #5c452d;
+    background: #e1dfb6;
+    display: grid;
+    place-content: center;
 }
 .form .signup__field.snack input[type=checkbox]:before {
-  content: "";
-  width: 0.65em;
-  height: 0.65em;
-  -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-          clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
-  transform: scale(0);
-  transform-origin: bottom left;
-  transition: 120ms transform ease-in-out;
-  box-shadow: inset 1em 1em #5c452d;
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    -webkit-clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+    transform: scale(0);
+    transform-origin: bottom left;
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em #5c452d;
 }
 .form .signup__field.snack input[type=checkbox]:checked:before {
-  transform: scale(1);
+    transform: scale(1);
 }
 .form .signup__field.snack input[type=checkbox]:focus {
-  outline: none;
+    outline: none;
 }
 .form .signup__button {
-  padding-top: 1rem;
-  margin-bottom: 3rem;
+    padding-top: 1rem;
+    margin-bottom: 3rem;
 }
 .form .signup__button button {
-  font-family: "Caveat Brush", sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 0.1rem;
-  font-size: 1.25rem;
-  font-weight: 700;
-  padding: 0.5rem 1rem;
-  color: #FFFFFF;
-  background: #abbb00;
-  border-radius: 50% 40% 30% 20%;
-  border: none;
-  cursor: pointer;
+    font-family: 'Palatino', serif;
+    letter-spacing: 0.1rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 0.5rem 1rem;
+    color: #FFFFFF;
+    background: #abbb00;
+    border-radius: 50% 40% 30% 20%;
+    border: none;
+    cursor: pointer;
 }
 .form .signup__button button:hover {
-  box-shadow: -0.5rem 0.5rem #62368f;
+    box-shadow: -0.5rem 0.5rem #62368f;
 }
 .form .signup__button button:active {
-  box-shadow: -0.5rem 0.5rem #62368f;
-  transform: translateY(0.2rem);
+    box-shadow: -0.5rem 0.5rem #62368f;
+    transform: translateY(0.2rem);
 }
 
+@media (max-width: 700px) {
+    body {
+        transform: scale(0.75);
+    }
+
+    .intro {
+        margin: 12rem 0 0 2rem;
+    }
+    form {
+        margin-top: 1rem; 
+    }
+}
