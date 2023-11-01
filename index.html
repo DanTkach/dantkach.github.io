@@ -1,69 +1,89 @@
 <!DOCTYPE html>
 <html lang="en" >
-<head>
-  <meta charset="UTF-8">
-  <title>CodePen - Animated CSS Cat Halloween RSVP Form #cpc</title>
-  <link rel="stylesheet" href="./style.css">
+    <head>
+        <meta charset="UTF-8">
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title>New Creation Party</title>
+        <link rel="stylesheet" href="./style.css">
 
-</head>
-<body>
-<!-- partial:index.partial.html -->
-<div class="intro">
-  <div class="stars">
-    <div id="star-1">✦</div>
-    <div id="star-2">✦</div>
-    <div id="star-3">✦</div>
-    <div id="star-4">✦</div>
-    <div id="star-5">✦</div>
-    <div id="star-6">✦</div>
-  </div>
+    </head>
+    <body>
+        <!-- partial:index.partial.html -->
+        <div class="intro">
+            <div class="stars">
+                <div id="star-1">✦</div>
+                <div id="star-2">✦</div>
+                <div id="star-3">✦</div>
+                <div id="star-4">✦</div>
+                <div id="star-5">✦</div>
+                <div id="star-6">✦</div>
+            </div>
             <img class="shrek" src="SHREK-logo.png"></img>
-  <div>
-    <h1 class="sub">COSTUME</h1>
-    <h1 class="title">SHREK</h1>
-    <h1 class="sub2">Party </h1>
-  </div>
+            <div>
+                <h1 class="sub">Costume</h1>
+                <h1 class="title">SHREK</h1>
+                <h1 class="sub2">Party </h1>
+            </div>
+        </div>
+        <form class="form">
+            <!--
+            <div class="signup__field name">
+                <label class="label" for="halloween_name">Numele Tau</label>
+                <input class="name_field" id="halloween_name" type="text" name="halloween_name"/>
+            </div>
+-->
+            <fieldset>
+                <legend>Detalii</legend>
+                <div class="signup__field">
+                    <label class="label costume" for="costume_type">Ești din Cricova și nu ai fost niciodată la o petrecere costumată? Atunci te invităm la o petrecere deschisă în stilul "Shrek". </label>
+                </div>
+                <div class="signup__field">
+                    <div class="label tricks-treats">Programul include mâncare delicioasă, dans, jocuri și, bineînțeles, vizionarea desenului animat "Shrek 1".</div>
+                    <div class="signup__field">
+                        <label class="label costume" for="costume_type">Vino cu prietenii tăi, asigură-te că aduci gustări, poți alege ceva din această listă: </label>
+                        <div class="select-field">
+                            <select class="select-field__menu" id="costume_type" name="costume_type">
+                                <option value="chipsuri">Chipsuri</option>
+                                <option value="Pesmeți">Pesmeți</option>
+                                <option value="Biscuiți">Biscuiți</option>
+                                <option value="Fructe">Fructe</option>
+                                <option value="Altceva">Altceva</option>
+                            </select>
+                        </div>
+                    </div>
+                <div class="signup__field">
+                    <label class="label costume" for="costume_type">Adresa: str.Chișinăului 64</label>
+                    <label class="label costume" for="costume_type">Ora: 16:00</label>
+                    <label class="label costume" for="costume_type">Intrarea este liberă</label>
+                </div>
+                    <!--
+                    <div class="select-field">
+                        <input class="select-field__menu" id="costume_type" name="costume_type" />
+                    </div>
+<div class="choices">
+<div class="choice1">
+<input id="tricks" type="radio" value="tricks" name="tricks"/>
+<label for="tricks">Tricks</label>
 </div>
-<form class="form">
-  <div class="signup__field name">
-    <label class="label" for="halloween_name">Numele Tau</label>
-    <input class="name_field" id="halloween_name" type="text" name="halloween_name"/>
-  </div>
-  <fieldset>
-    <legend>Detalii</legend>
-    <div class="signup__field">
-      <label class="label costume" for="costume_type">adj;lfakjsd;lkfaj;sldkj</label>
-      <div class="select-field">
-        <input class="select-field__menu" id="costume_type" name="costume_type" />
-      </div>
-    </div>
-    <div class="signup__field">
-      <div class="label tricks-treats">asdakfljhlllhlhlhlhlhlh</div>
-<!--
-      <div class="choices">
-        <div class="choice1">
-          <input id="tricks" type="radio" value="tricks" name="tricks"/>
-          <label for="tricks">Tricks</label>
-        </div>
-        <div class="choice2">
-          <input id="treats" type="radio" value="treats" name="tricks"/>
-          <label for="treats">Treats</label>
-        </div>
-      </div>
+<div class="choice2">
+<input id="treats" type="radio" value="treats" name="tricks"/>
+<label for="treats">Treats</label>
+</div>
+</div>
 -->
-    </div>
-  </fieldset>
-<!--
-  <div class="signup__field snack">
-    <input id="bringing_snacks" type="checkbox" name="bringing_snacks"/>
-    <label for="bringing_snacks">I volunteer to bring a shareable snack.</label>
-  </div>
+                </div>
+            </fieldset>
+            <!--
+<div class="signup__field snack">
+<input id="bringing_snacks" type="checkbox" name="bringing_snacks"/>
+<label for="bringing_snacks">I volunteer to bring a shareable snack.</label>
+</div>
+            <div class="signup__button">
+                <button class="button" type="button">Submit</button>
+            </div>
 -->
-  <div class="signup__button">
-    <button class="button" type="button">Submit</button>
-  </div>
-</form>
-<!-- partial -->
-  
-</body>
+        </form>
+        <!-- partial -->
+
+    </body>
 </html>
